@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -6,7 +5,9 @@ import { urlFor } from "../sanity";
 import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
 
-type Props = { pageInfo: PageInfo };
+type Props = { pageInfo: PageInfo,  };
+
+
 
 export default function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
@@ -22,7 +23,7 @@ export default function Hero({ pageInfo }: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <Image
+      <img
         src={urlFor(pageInfo?.heroImage).url()}
         alt="drawn picture"
         className="relative rounded-full h-32 w-32 mx-auto object-cover"

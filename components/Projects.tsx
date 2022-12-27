@@ -58,7 +58,7 @@ export default function Projects({ projects }: Props) {
                 <div className="flex items-center space-x-2 justify-center">
                   {project?.technologies.map((tech) => {
                     return (
-                      <Image
+                      <img
                         key={tech._id}
                         src={urlFor(tech.image).url()}
                         alt={tech.tilte}
