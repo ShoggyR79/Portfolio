@@ -42,29 +42,29 @@ export default function Home({
         <link rel="icon" href="/DDbyLK.png" />
       </Head>
 
-      <Header socials={socials}/>
+      <Header socials={socials} />
 
-      <section id="hero" >
+      <section id="hero">
         <Hero pageInfo={pageInfo} />
       </section>
 
       <section id="about">
-        <About pageInfo={pageInfo}/>
+        <About pageInfo={pageInfo} />
       </section>
 
       <section id="experience">
         <WorkExperiences experiences={experiences} />
       </section>
 
-      <section id="skills" >
-        <Skills skills={skills}/>
+      <section id="skills">
+        <Skills skills={skills} />
       </section>
       {/* Projects */}
-      <section id="projects"  >
+      <section id="projects">
         <Projects projects={projects} />
       </section>
       {/* Contact Me */}
-      <section id="contact" >
+      <section id="contact">
         <ContactMe />
       </section>
       <Link href="#hero">
@@ -97,6 +97,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       projects,
       socials,
     },
-    revalidate: 60,
+    revalidate: 30,
+    fallback: false
   };
 };
