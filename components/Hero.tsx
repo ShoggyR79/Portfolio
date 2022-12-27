@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { text } from "stream/consumers";
 import { urlFor } from "../sanity";
 import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
@@ -22,7 +22,7 @@ export default function Hero({ pageInfo }: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <img
+      <Image
         src={urlFor(pageInfo?.heroImage).url()}
         alt="drawn picture"
         className="relative rounded-full h-32 w-32 mx-auto object-cover"

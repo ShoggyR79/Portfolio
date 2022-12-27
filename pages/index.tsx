@@ -98,6 +98,5 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       socials,
     },
     revalidate: 30,
-    fallback: false
   };
 };

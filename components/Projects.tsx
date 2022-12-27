@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import { Project } from "../typings";
 import { urlFor } from "../sanity";
+import Image from "next/image";
 
 type Props = { projects: Project[] };
 
@@ -57,7 +58,7 @@ export default function Projects({ projects }: Props) {
                 <div className="flex items-center space-x-2 justify-center">
                   {project?.technologies.map((tech) => {
                     return (
-                      <img
+                      <Image
                         key={tech._id}
                         src={urlFor(tech.image).url()}
                         alt={tech.tilte}
