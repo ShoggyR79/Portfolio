@@ -19,12 +19,12 @@ export default function ContactMe({}: Props) {
     }&body=${formData.message} (${formData.email})`;
   };
   return (
-    <div className="min-h-screen flex relative overflow-hidden flex-col text-lft md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
+    <div className="min-h-screen flex relative  flex-col text-lft md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-52 uppercase tracking-[20px] text-gray-300 text-2xl">
         Contact
       </h3>
       <div className="absolute top-64 flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-lg font-semibold text-center md:text-4xl">
           Feel free to reach out to me for anything!
         </h4>
         <div className="space-y-10">
@@ -39,7 +39,7 @@ export default function ContactMe({}: Props) {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 md:w-fit mx-auto"
+          className="flex flex-col space-y-2  w-screen md:w-fit mx-auto"
         >
           <div className="flex space-x-2 ">
             <input
