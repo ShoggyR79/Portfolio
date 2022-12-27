@@ -81,21 +81,21 @@ export default function Home({
   );
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
-  const socials: Social[] = await fetchSocials();
-  const experiences: Experience[] = await fetchExperiences();
-  const projects: Project[] = await fetchProjects();
-  const skills: Skill[] = await fetchSkills();
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   const pageInfo: PageInfo = await fetchPageInfo();
+//   const socials: Social[] = await fetchSocials();
+//   const experiences: Experience[] = await fetchExperiences();
+//   const projects: Project[] = await fetchProjects();
+//   const skills: Skill[] = await fetchSkills();
 
-  return {
-    props: {
-      pageInfo,
-      experiences,
-      skills,
-      projects,
-      socials,
-    },
-    revalidate: 60,
-  };
-};
+//   return {
+//     props: {
+//       pageInfo,
+//       experiences,
+//       skills,
+//       projects,
+//       socials,
+//     },
+//     revalidate: 60,
+//   };
+// };
