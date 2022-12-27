@@ -71,7 +71,7 @@ export default function Home({
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <Image
+            <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://ps.w.org/back-to-the-top-button/assets/icon-256x256.png?rev=2283756"
               alt="scroll to top"
