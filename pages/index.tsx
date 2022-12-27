@@ -35,7 +35,7 @@ export default function Home({
    
     <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#20AAB1]/80">
       <Head>
-        <title>Du Duong</title>
+        <title>{pageInfo.name} - portfolio</title>
         <meta
           name="description"
           content="Portfolio website created by Du Duong"
