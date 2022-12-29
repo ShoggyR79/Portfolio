@@ -15,6 +15,7 @@ import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchProjects } from "../utils/fetchProject";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchSocials } from "../utils/fetchSocials";
+import { Analytics } from "@vercel/analytics/react";
 
 type Props = {
   pageInfo: PageInfo;
@@ -32,7 +33,6 @@ export default function Home({
   projects,
 }: Props) {
   return (
-   
     <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#20AAB1]/80">
       <Head>
         <title>{pageInfo.name} - portfolio</title>
@@ -79,6 +79,7 @@ export default function Home({
           </div>
         </footer>
       </Link>
+      <Analytics />
     </div>
   );
 }
